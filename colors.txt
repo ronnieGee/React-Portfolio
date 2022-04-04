@@ -1,0 +1,5 @@
+Fresh: #F7F5E6
+Orange: #C066014
+Pastel Peach: #EDDBCD
+Black #1D2731
+Grey: #CDCDCD
