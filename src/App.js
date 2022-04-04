@@ -1,26 +1,24 @@
 import "./App.css";
-import Layout from './components/Layout/Layout.js'
+import Layout from './components/Layout/index.js'
 import { createTheme, ThemeProvider } from "@mui/material";
-import Sidebar from "./components/Sidebar/Sidebar.js";
+import Sidebar from "./components/Sidebar/index.js";
 import { Routes, Route} from "react-router-dom";
 import { Home } from "@mui/icons-material";
+import { grey } from "@mui/material/colors";
 
 const theme = createTheme({
   palette: {
-    secondary: {
-      main: "#1D2731",
-    },
+    primary: {main: '#1D2731',},
+    secondary: {main: '#0B3C5D',},
+    info: {main: '#D9B310',},
   },
 });
 
 function App() {
   return (
     <>
-    <ThemeProvider theme={theme}>
-        <Sidebar theme={theme}></Sidebar>
-    </ThemeProvider>
     <Routes>
-      <Route path="/" element={<Layout />} />
+      <Route path="/" element={<Layout theme={theme} />} />
     </Routes>
     </>
 

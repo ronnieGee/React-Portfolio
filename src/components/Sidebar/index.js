@@ -1,15 +1,15 @@
-import './Sidebar.css';
+import './index.css';
 import { AppBar, Box, Button, IconButton} from "@mui/material";
 import React from "react";
 import { Link, NavLink } from 'react-router-dom';
 import { Person, Home, Email, LinkedIn, YouTube, GitHub } from '@mui/icons-material';
 
-const Sidebar = ({theme}) => {
+const Sidebar = () => {
   return (
     <>
-      <Box sx={{ backgroundColor:"secondary.main"}} className="nav-bar">
+      <Box sx={{ backgroundColor:"primary.main"}} className="nav-bar">
         <nav>
-          <NavLink exact="true" to="/home">
+          <NavLink className={({ isActive }) => (isActive ? 'active' : 'inactive')} exact="true" to="/home">
             <IconButton size="small"><Home className="nav-icon" sx={{fontSize:40}}/></IconButton>
           </NavLink>
           <NavLink exact="true" to="/about">
