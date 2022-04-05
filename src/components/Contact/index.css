@@ -1,0 +1,8 @@
+.text-field {
+  border-radius: 4px;
+}
+
+#sendBtn{
+  position: relative;
+  margin-bottom: 8px;
+}
