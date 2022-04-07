@@ -5,4 +5,18 @@
 #sendBtn{
   position: relative;
   margin-bottom: 8px;
+  width: 25%;
 }
+
+#email-form{
+  background-color: #1D2731;
+  margin: 8px;
+}
+
+#button-container{
+  display: flex;
+  padding: 4px;
+  flex-direction: column;
+  align-items: flex-end;
+}
+

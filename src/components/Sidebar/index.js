@@ -11,7 +11,7 @@ const Sidebar = () => {
 
   return (
     <>
-      <Box sx={{ backgroundColor:"primary.main"}} className="nav-bar">
+      <Box sx={{ backgroundColor:"primary.main"}} className="nav-bar" maxWidth="8%">
         <nav>
           <NavLink className={({ isActive }) => (isActive ? 'active' : 'inactive')} exact="true" to="/home">
             <Tooltip title="Home Page" placement="right" arrow>
@@ -50,7 +50,7 @@ const Sidebar = () => {
             <a
               target="_blank"
               href="https://www.linkedin.com/in/ronnie-gee-alfonso/"
-              rel>
+              rel="noreferrer noopener">
                 <IconButton><LinkedIn/></IconButton>
             </a>
           </Tooltip>
@@ -58,7 +58,7 @@ const Sidebar = () => {
             <a
               target="_blank"
               href="https://www.youtube.com/channel/UCECBSLSFHXIb7TMS_55-TnA"
-              rel>
+              rel="noreferrer noopener">
                 <IconButton><YouTube/></IconButton>
             </a>
           </Tooltip>
@@ -66,7 +66,7 @@ const Sidebar = () => {
             <a
               target="_blank"
               href="https://github.com/ronnieGee"
-              rel>
+              rel="noreferrer noopener">
                 <IconButton><GitHub/></IconButton>
             </a>
           </Tooltip>

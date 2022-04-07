@@ -9,7 +9,7 @@ const Layout = ({theme}) => {
     <>
     <ThemeProvider theme={theme}>
         <Sidebar></Sidebar>
-        <Box className="page" sx={{backgroundColor:theme.palette.secondary.light}} >
+        <Box className="page" sx={{}} >
           <Outlet/>
         </Box>
     </ThemeProvider>

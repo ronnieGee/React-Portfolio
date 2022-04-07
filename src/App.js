@@ -3,7 +3,7 @@ import { createTheme, ThemeProvider } from "@mui/material";
 import Sidebar from "./components/Sidebar/index.js";
 import { Routes, Route} from "react-router-dom";
 import { Home, HPlusMobiledata } from "@mui/icons-material";
-import { grey } from "@mui/material/colors";
+import { grey, red } from "@mui/material/colors";
 import Homepage from "./components/Home/index.js";
 import Layout from "./components/Layout";
 import Contactme from "./components/Contact";
@@ -12,19 +12,40 @@ import Blogs from "./components/Blog";
 import Projects from "./components/Projects";
 
 const theme = createTheme({
+
   palette: {
     primary: {main: '#1D2731',},
     secondary: {main: '#ABACAD',},
-    info: {main: '#D9B310',},
+    info: {main: '#D9B310',}, //callToAction
   },
+  components: {
+    MuiCssBaseline:{
+      styleOverrides: {
+        body: {
+          
+        }
+      }
+    },
+
+    MuiTextField:{
+      styleOverrides: {
+        root: {
+          backgroundColor: "white",
+          color: "black"
+        },
+        input:{
+          color: "black"
+        }
+      }
+    }
+  }
 });
 
 function App() {
   return (
     <div>
     <ThemeProvider theme={theme}>
-      {/* <Sidebar /> */}
-    
+   
       <Routes>
         <Route path="/" element={<Layout theme={theme}/>}>
           <Route path="/home" element={<Homepage />} />

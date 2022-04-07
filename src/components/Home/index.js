@@ -6,7 +6,7 @@ import Sidebar from '../Sidebar';
 const Homepage = ({theme}) => {
   return (
     <div>
-      Homepageeeee</div>
+      Homepage</div>
   )
 }
 

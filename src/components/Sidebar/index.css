@@ -1,7 +1,7 @@
 .nav-bar{
   width: 60px;
   height: 100%;
-  position: absolute;
+  position: fixed;
   top: 0px;
   left: 0px;
   z-index: 500;
@@ -32,4 +32,8 @@ nav .active{
   text-align: center;
   margin: 0;
   padding: 0;
+}
+
+.nav-icon{
+  max-height: 60px;
 }
